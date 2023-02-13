@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>photography</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+      <script type="text/javascript">
+          function redirectMobileHandler() {
+            const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+              if(width < 601) {
+              window.location = 'test1.html';
+              }
+          }
+
+          window.onload = redirectMobileHandler();
+          window.onresize = () => redirectMobileHandler();
+      </script>
+  </head>
+    <body>
+
+      <div class="mainBody">
+        <div class="menu">
+          <div class="logo">
+            <img class="imglogo" src="Logo.png">
+            <h1> Kisekikana's Photography </h1>
+          </div>
+          <div class="buttons">
+              <a href="index.html"><div class="home"><p class="home1">Home</p></div></a>
+              <a href="photos2.html"><div class="photos"><p class="home1">Photos</p></div></a>
+              <a href="contact.html"><div class="contact"><p class="home1">Contact</p></div></a>
+              <a href="social.html"><div class="socials"><p class="home1">Socials</p></div></a>
+          </div>
+        </div>
+
+        <div class="firstScroll">
+            <div class="fs1">
+              <img class="mySlides fade" src="fsbg1.png">
+              <img class="mySlides fade" src="fsbg2.png">
+              <img class="mySlides fade" src="fsbg3.png">
+            </div>
+            <div class="fs2">
+              <div class="fs3">
+                <div class="fs4">
+                  <div>
+                    <p>Welcome to my photography website!</p>
+                    <p>This is mainly to showcase my programming and photography skills</p>
+                    <p>(Hover over this box to see the image)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="secondScroll">
+            <div class="ss1">
+              <p>If you're interested in my services, please contact me!</p>
+            </div>
+            <div class="ss2">
+            </div>
+          </div>
+
+        <div class="footer">
+            <div class="footer2">
+              <div class="ftAddresses">
+                <p>Copyright Notice</p>
+                <p>Address:</p>
+                <p>phone number:</p>
+                <p>email address: </p>
+              </div>
+              <div class="contacts">
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Pinterest</p>
+                <p>Flickr</p>
+              </div>
+        </div>
+
+      </div>
+
+      <script>
+
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+
+    </body>
+</html>

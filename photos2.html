@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Photos</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+      <script type="text/javascript">
+          function redirectMobileHandler() {
+            const width = Math.max(document.clientWidth || 0, window.innerWidth || 0);
+              if(width < 601) {
+              window.location = 'test1.html';
+              }
+          }
+
+          window.onload = redirectMobileHandler();
+          window.onresize = () => redirectMobileHandler();
+      </script>
+  </head>
+    <body>
+
+      <div class="mainBody">
+        <div class="menu">
+          <div class="logo">
+            <img class="imglogo" src="Logo.png">
+            <h1> Amy's Photography </h1>
+          </div>
+          <div class="buttons">
+              <a href="index.html"><div class="home"><p class="home1">Home</p></div></a>
+              <a href="photos2.html"><div class="photos"><p class="home1">Photos</p></div></a>
+              <a href="contact.html"><div class="contact"><p class="home1">Contact</p></div></a>
+              <a href="social.html"><div class="socials"><p class="home1">Socials</p></div></a>
+          </div>
+        </div>
+
+        <div class="photos1">
+          <div class="leftContents">
+            <div class="animals">
+              <div><p id="#animals">Animals</p></div>
+              <div class="container1">
+                <div class="short"><img src="Animals\IMG102.JPG"></div>
+                <div class="short"><img src="Animals\IMG104.JPG"></div>
+                <div class="tall"><img src="Animals\IMG105.JPG"></div>
+                <div class="short"><img src="Animals\IMG106.JPG"></div>
+                <div class="tall"><img src="Animals\IMG108.JPG"></div>
+                <div class="tall"><img src="Animals\IMG109.PNG"></div>
+                <div class="tall"><img src="Animals\IMG110.PNG"></div>
+                <div class="tall"><img src="Animals\IMG111.PNG"></div>
+                <div class="tall"><img src="Animals\IMG112.PNG"></div>
+                <div class="short"><img src="Animals\IMG113.PNG"></div>
+                <div class="short"><img src="Animals\IMG114.PNG"></div>
+                <div class="tall"><img src="Animals\IMG115.JPG"></div>
+                <div class="tall"><img src="Animals\IMG116.JPG"></div>
+                <div class="tall"><img src="Animals\IMG117.JPG"></div>
+                <div class="tall"><img src="Animals\IMG119.JPG"></div>
+              </div>
+            </div>
+
+            <div class="scenery">
+              <div><p id="#scenery">Scenery</p></div>
+              <div class="container1">
+                <div class="tall"><img src="Scenery\IMG1.PNG"></div>
+                <div class="tall"><img src="Scenery\IMG2.PNG"></div>
+                <div class="tall"><img src="Scenery\IMG3.PNG"></div>
+                <div class="tall"><img src="Scenery\IMG7.JPG"></div>
+                <div class="short"><img src="Scenery\IMG4.PNG"></div>
+                <div class="short"><img src="Scenery\IMG8.JPG"></div>
+                <div class="tall"><img src="Scenery\IMG9.JPG"></div>
+                <div class="short"><img src="Scenery\IMG10.JPG"></div>
+                <div class="tall"><img src="Scenery\IMG12.JPG"></div>
+                <div class="short"><img src="Scenery\IMG11.JPG"></div>
+                <div class="short"><img src="Scenery\IMG14.JPG"></div>
+                <div class="short"><img src="Scenery\IMG15.JPG"></div>
+                <div class="short"><img src="Scenery\IMG17.JPG"></div>
+              </div>
+            </div>
+
+            <div class="people">
+              <div><p id="#people">People</p></div>
+              <div class="container1">
+                <div class="tall"><img src="People\IMG1.JPG"></div>
+                <div class="short"><img src="People\IMG2.JPG"></div>
+                <div class="tall"><img src="People\IMG3.JPG"></div>
+                <div class="short"><img src="People\IMG4.JPG"></div>
+                <div class="short"><img src="People\IMG5.JPG"></div>
+                <div class="short"><img src="People\IMG6.JPG"></div>
+                <div class="short"><img src="People\IMG7.JPG"></div>
+                <div class="tall"><img src="People\IMG8.PNG"></div>
+                <div class="tall"><img src="People\IMG9.PNG"></div>
+                <div class="short"><img src="People\IMG10.JPG"></div>
+                <div class="short"><img src="People\IMG11.PNG"></div>
+                <div class="tall"><img src="People\IMG12.PNG"></div>
+                <div class="tall"><img src="People\IMG13.JPG"></div>
+                <div class="short"><img src="People\IMG14.PNG"></div>
+                <div class="short"><img src="People\IMG15.PNG"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer2">
+              <div class="ftAddresses">
+                <p>Copyright Notice</p>
+                <p>Address:</p>
+                <p>phone number:</p>
+                <p>email address: </p>
+              </div>
+              <div class="contacts">
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>Pinterest</p>
+                <p>Flickr</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      <script>
+
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+
+    </body>
+</html>
