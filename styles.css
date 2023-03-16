@@ -334,14 +334,71 @@ h4 {
     background-color: white;
     width: 100%;
     margin: 0vh;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 
-.formhold {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 100%;
-  padding: 1vh 0vh 0vh 0vh;
+.slideshow2 {
+  display: flex;
+  justify-content: center;
+}
+
+.imagesslide2 {
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  background-image: url('square/1.png');
+  background-size: 100% 100%;
+  animation: example 15s ease-out 0s infinite;
+  border-radius: 5px;
+}
+
+@keyframes example {
+  0% {background-image: url('square/1.png');}
+  33.4% {background-image: url('square/2.png');}
+  66.8% {background-image: url('square/3.png');}
+}
+
+.contactformHolder {
+    margin: auto;
+}
+
+.contactformHolder p {
+  font-size: 3vh;
+  margin: 0vh 0vh 2.5vh 0vh;
+}
+
+input {
+  width: 30vw;
+  height: 4vh;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 1vh 0vh 2.5vh 0vh;
+  font-family: 'font';
+}
+
+button {
+  border-radius: 3px;
+  border-width: 1px;
+  width: 10vh;
+  height: 5vh;
+  font-family: 'font';
+  transition: 1s;
+  cursor: pointer;
+  border-color: black;
+  border-style: solid;
+  font-size: 3vh;
+}
+
+
+textarea {
+  width: 30vw;
+  height: 20vh;
+  border-radius: 5px;
+  border-width: 1px;
+  resize: vertical;
+  margin: 1vh 0vh 2.5vh 0vh;
+  font-family: 'font';
+  color: grey;
 }
