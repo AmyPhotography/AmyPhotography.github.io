@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Meow</title>
+        <style>
+            .table {
+                height: 100vh;
+                width: 100vw;
+                background-color: aqua;
+                position: absolute;
+                z-index: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            img {
+                position: absolute;
+                z-index: 0;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            #tabler:hover .table{
+                grid-template-columns: 1fr 0fr 0fr 0fr;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="table">
+            <div id="tabler"></div>
+            <div id="tabler1" style="background-color: aquamarine;"></div>
+            <div id="tabler2" style="background-color: red;"></div>
+            <div id="tabler3" style="background-color: green;"></div>
+        </div>
+        <img id="img1" src="fsbg1.png">
+        <img id="img2" src="fsbg2.png">
+        <img id="img3" src="fsbg3.png">
+
+    </body>
+</html>

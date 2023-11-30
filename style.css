@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #728da5;
+  background: #263349;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,22 +27,21 @@ body {
 }
 
 .mainBody {
-  position: absolute;
   background-color: #263349;
   width: 100%;
-  height: 50vh;
-  top: 0%;
-  left: 0%;
   margin: 0;
-  padding: 0;
 }
 
 .a:visited , a:link {
    text-decoration: none;
 }
 
+.menu2 {
+  position: sticky;
+  top: 0px;
+}
+
 .menu {
-  position: relative;
   background-color: #263349;
   width: 100%;
   height: 12.5vh;
@@ -71,7 +70,8 @@ h1 {
 .buttons {
   width: 45%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-around;
   align-items: center;
 }
@@ -80,9 +80,7 @@ h1 {
   color: white;
   width: 20%;
   height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   font-size: 4vh;
 }
 
@@ -110,217 +108,18 @@ h1 {
   transform-origin: bottom left;
 }
 
-.firstScroll {
-  position: relative;
-  background-color: white;
-  max-width: 100%;
-  height: 80vh;
-  margin: auto;
-}
-
-.mySlides {
-  display: none;
+.HomeContent {
   width: 100%;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-.fs1 {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
-.fs2 {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-}
-
-.fs3 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fs4 {
-    width: 40%;
-    height: 40%;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.5s;
-    text-align: center;
-}
-
-.fs4:hover {
-  opacity: 0;
-
-}
-
-.secondScroll {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  background-color: white;
-  display: flex;
-}
-
-.ss1 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ss2 {
-  width: 50%;
-  height: 100%;
-}
-
-.footer {
-  background-color: #263349;
-  position: relative;
-  width: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
-}
-
-.footer2 {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
-
-.page {
-  width: 100%;
+.Body {
   height: 100vh;
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 10vh;
 }
 
-.container {
-  width: 50%;
+.Footer {
+  height: 10vh;
+  background-color: #263349;
+
 }
-
-.album {
-  width: 50vw;
-  height: 20vh;
-  background-color: red;
-  display: flex;
-  padding-top: 5%;
-}
-
-.cover {
-  width: 30%;
-  height: 100%;
-  background-color: blue;
-}
-
-.coverimg {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.info {
-  width: 70%;
-  height: 100%;
-  background-color: green;
-}
-
-/* Photos */
-
-.photos1 {
-    position: relative;
-    background-color: white;
-    width: 100%;
-    margin: 0vh;
-    min-height: 100vh;
-    text-align: center;
-    margin: 0vh;
-    font-size: 5vh;
-    padding: 0vh 0vh 0vh 0vh;
-    display: flex;
-    justify-content: space-around;
-  }
-
-
-.leftContents {
-  width: 80%;
-  padding: 0vh 0vh 0vh 0vh;
-  margin: 0px;
-}
-
-.rightContents {
-  width: 15%;
-}
-
-.scenery, .people {
-    width: 100%;
-    padding: 0vh 0vh 0vh 0vh;
-  }
-
-.animals {
-  width: 100%;
-  padding: 0vh 0vh 0vh 0vh;
-}
-
-  .container1 {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 7.5vw;
-    grid-auto-rows: 50vh;
-    gap: 1vh;
-    margin: 0px;
-    padding: 5vh 0vh 5vh 0vh;
-  }
-
-  .container1 div {
-    overflow: hidden;
-  }
-
-  .short img, .tall img {
-    width: 100%;
-  }
-
-  .short {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tall {
-    grid-column: span 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
